@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kahani Restaurant – Sohar, Oman | كهاني مطعم صحار</title>
+<meta name="description" content="Kahani by Indian House – premium multi-cuisine restaurant in Sohar, Oman. Indian, Chinese, Asian & Arabic flavours. مطعم متعدد المطابخ في صحار.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f0c09;--bg2:#1a1510;--tx:#f3ead8;--mu:#b5a68c;--gold:#d4a24c;--ln:#3a2f22;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#faf5ea;--bg2:#f0e7d3;--tx:#2a1f12;--mu:#6e5c42;--gold:#9a6b14;--ln:#d9c9a8}}
+html{scroll-behavior:smooth;scroll-padding-top:70px}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:Cairo,system-ui,sans-serif;line-height:1.7}
+h1,h2,h3{font-family:'Cormorant Garamond',Cairo,serif;margin:0;font-weight:700}
+a{color:var(--gold)}section{padding:64px 20px;max-width:1100px;margin:auto}
+h2{font-size:2.2rem;color:var(--gold);margin-bottom:8px}.sub{color:var(--mu);margin-bottom:28px}
+nav{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--ln);display:flex;align-items:center;gap:14px;padding:10px 16px;overflow-x:auto;white-space:nowrap}
+nav b{font-family:'Cormorant Garamond',serif;color:var(--gold);font-size:1.3rem;letter-spacing:.1em}
+nav a{color:var(--tx);text-decoration:none;font-size:.9rem}
+.btn{display:inline-block;border:1px solid var(--gold);background:none;color:var(--gold);padding:9px 20px;border-radius:99px;cursor:pointer;font:inherit;text-decoration:none}
+.btn.f{background:var(--gold);color:#1a1208}
+.hero{min-height:88vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:40px 20px;background:radial-gradient(ellipse at 50% 30%,#3a2a14 0,var(--bg) 70%)}
+.hero small{letter-spacing:.3em;color:var(--gold)}.hero h1{font-size:clamp(2.6rem,9vw,5.5rem);line-height:1.1;margin:10px 0}
+.hero p{max-width:560px;color:var(--mu)}.row{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.card{background:var(--bg2);border:1px solid var(--ln);border-radius:14px;padding:16px}
+.it{display:flex;justify-content:space-between;gap:10px;align-items:center;border-bottom:1px solid var(--ln);padding:10px 0}
+.it span{flex:1}.pr{display:flex;gap:6px}.pr button{background:var(--gold);color:#1a1208;border:0;border-radius:8px;padding:4px 10px;cursor:pointer;font:inherit;font-size:.85rem}
+.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:8px;margin-bottom:12px}.chips button{white-space:nowrap}.chips .on{background:var(--gold);color:#1a1208}
+input,textarea,select{width:100%;background:var(--bg2);color:var(--tx);border:1px solid var(--ln);border-radius:10px;padding:10px;font:inherit;margin-bottom:10px}
+.note{font-size:.85rem;color:var(--mu);border:1px dashed var(--ln);border-radius:10px;padding:10px;margin:12px 0}
+.ph{height:110px;border-radius:10px;background:linear-gradient(135deg,#4a3419,#1a1510);display:flex;align-items:center;justify-content:center;color:var(--gold);font-family:'Cormorant Garamond',serif;font-size:1.3rem;text-align:center;margin-bottom:10px}
+#wa{position:fixed;bottom:calc(16px + env(safe-area-inset-bottom,0px));inset-inline-start:16px;background:#25d366;color:#fff;border-radius:99px;padding:12px 18px;text-decoration:none;z-index:30;font-weight:700}
+#cartbar{position:fixed;bottom:calc(16px + env(safe-area-inset-bottom,0px));inset-inline-end:16px;z-index:30}
+#cart{display:none;position:fixed;inset:auto 0 0 0;max-height:75vh;overflow:auto;background:var(--bg2);border-top:2px solid var(--gold);padding:20px;z-index:40}
+footer{text-align:center;color:var(--mu);padding:30px 20px 90px;border-top:1px solid var(--ln)}
+</style></head><body>
+<nav><b>KAHANI</b>
+<a href="#home" data-t="Home|الرئيسية"></a><a href="#about" data-t="About Us|من نحن"></a><a href="#menu" data-t="Menu|القائمة"></a><a href="#spec" data-t="Specialities|المميزة"></a><a href="#gallery" data-t="Gallery|المعرض"></a><a href="#reserve" data-t="Reservations|الحجوزات"></a><a href="#contact" data-t="Contact|اتصل بنا"></a>
+<button class="btn" id="lang" style="margin-inline-start:auto">EN</button></nav>
+
+<header class="hero" id="home"><small>KAHANI BY INDIAN HOUSE · SOHAR</small>
+<h1 data-t="A Taste of Excellence|مذاق التميّز"></h1>
+<p data-t="Discover a world of Indian, Asian, Chinese and Arabic flavours at Kahani Restaurant, Sohar.|اكتشف عالماً من النكهات الهندية والآسيوية والصينية والعربية في مطعم كهاني بصحار."></p>
+<p style="color:var(--gold)">A Premium Multi-Cuisine Dining Experience</p>
+<div class="row"><a class="btn f" href="#menu" data-t="Explore Our Menu|استعرض القائمة"></a><a class="btn" href="#reserve" data-t="Reserve a Table|احجز طاولة"></a><a class="btn" href="#menu" data-t="Order via WhatsApp|اطلب عبر واتساب"></a></div></header>
+
+<section id="about"><h2 data-t="About Us|من نحن"></h2>
+<p data-t="Kahani is a premium multi-cuisine dining destination in Sohar, Oman, bringing together a variety of Indian, Asian, Chinese and Arabic culinary influences. From grills and seafood to biryani, desserts and drinks, our menu is made for relaxed family lunches and dinners with friends.|كهاني وجهة طعام راقية متعددة المطابخ في صحار بسلطنة عُمان، تجمع تأثيرات هندية وآسيوية وصينية وعربية. من المشاوي والمأكولات البحرية إلى البرياني والحلويات والمشروبات، قائمتنا مناسبة للغداء والعشاء مع العائلة والأصدقاء في أجواء مريحة."></p></section>
+
+<section id="menu"><h2 data-t="Menu|قائمة الطعام"></h2>
+<div class="note" data-t="Prices are preliminary (taken from a published directory menu) and pending confirmation by restaurant management.|الأسعار أولية (مأخوذة من قائمة منشورة في دليل مطاعم) وبانتظار تأكيد إدارة المطعم."></div>
+<input id="q" data-p="Search dishes…|ابحث عن طبق…"><div class="chips" id="chips"></div><div id="list"></div></section>
+
+<section id="spec"><h2 data-t="Specialities|أطباقنا المميزة"></h2>
+<div class="grid" id="specs"></div></section>
+
+<section id="gallery"><h2 data-t="Gallery|معرض الصور"></h2>
+<div class="note" data-t="Original restaurant photos will be added here once supplied by management. Use the Instagram link for the latest photos.|ستُضاف صور المطعم الأصلية هنا عند تزويدها من الإدارة. تابعوا إنستغرام لأحدث الصور."></div>
+<a class="btn" href="https://www.instagram.com/kahani.oman" target="_blank" rel="noopener">Instagram</a>
+<a class="btn" href="https://www.youtube.com/@Kahani_Oman" target="_blank" rel="noopener">YouTube</a></section>
+
+<section id="reviews"><h2 data-t="Guest Reviews|آراء الضيوف"></h2>
+<p data-t="Guests often mention a relaxed atmosphere, friendly service, family-friendly dining, Indian dishes and desserts like Jalebi.|يذكر الزوار غالباً الأجواء المريحة والخدمة الودودة وملاءمة المطعم للعائلات والأطباق الهندية والحلويات مثل الجليبي."></p>
+<a class="btn f" href="https://share.google/3dD2midLSbS1QM3hK" target="_blank" rel="noopener" data-t="Read reviews on Google|اقرأ التقييمات على جوجل"></a></section>
+
+<section id="reserve"><h2 data-t="Reservations|حجز طاولة"></h2>
+<div class="note" data-t="This is a preliminary request only. Your booking is not confirmed until the restaurant confirms it. For the private hall, please enquire first.|هذا طلب أولي فقط، ولا يُعتبر الحجز مؤكداً حتى تؤكده إدارة المطعم. للقاعة الخاصة يرجى الاستفسار أولاً."></div>
+<div style="max-width:520px"><input id="rn" data-p="Name|الاسم"><input id="rp" type="tel" data-p="Phone|رقم الهاتف"><input id="rd" type="date"><input id="rt" type="time"><input id="rg" type="number" min="1" data-p="Guests|عدد الأشخاص">
+<select id="rs"><option value="Any">Any seating / أي جلسة</option><option value="Family">Family / عائلية</option><option value="Private hall enquiry">Private hall enquiry / استفسار قاعة خاصة</option></select>
+<textarea id="rm" rows="2" data-p="Notes|ملاحظات"></textarea><button class="btn f" id="rsend" data-t="Send request via WhatsApp|أرسل الطلب عبر واتساب"></button></div></section>
+
+<section id="contact"><h2 data-t="Contact & Location|التواصل والموقع"></h2>
+<div class="grid"><div class="card"><h3>📍</h3><p data-t="Al Tareef, Sohar, North Al Batinah, Oman — next to Bank Muscat. Plus Code: 9PH3+RFC|الطريف، صحار، شمال الباطنة، عُمان — بجانب بنك مسقط. الرمز: 9PH3+RFC"></p><a class="btn" href="https://www.google.com/maps/search/?api=1&query=9PH3%2BRFC%2C+Sohar%2C+Oman" target="_blank" rel="noopener" data-t="Open in Google Maps|افتح في خرائط جوجل"></a></div>
+<div class="card"><h3>🕒</h3><p data-t="Every day: 11:30 AM – 11:30 PM|كل يوم: 11:30 صباحاً – 11:30 مساءً"></p></div>
+<div class="card"><p><a href="tel:+96899341643" dir="ltr">+968 9934 1643</a><br><a href="mailto:kahani.oman@gmail.com">kahani.oman@gmail.com</a><br><a href="https://wa.me/96899341643" target="_blank" rel="noopener">WhatsApp</a> · <a href="https://www.instagram.com/kahani.oman" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/kahani.oman" target="_blank" rel="noopener">Facebook</a> · <a href="https://www.youtube.com/@Kahani_Oman" target="_blank" rel="noopener">YouTube</a> · <a href="https://linktr.ee/kahani.oman" target="_blank" rel="noopener">Linktree</a></p></div></div>
+<h3 style="margin-top:28px" data-t="Send a message|أرسل رسالة"></h3><div style="max-width:520px"><input id="cn" data-p="Name|الاسم"><textarea id="cm" rows="3" data-p="Message|رسالتك"></textarea><button class="btn f" id="csend" data-t="Send via WhatsApp|أرسل عبر واتساب"></button></div></section>
+
+<footer>© Kahani Restaurant, Sohar · <span data-t="Seasonal specials will be posted here when available.|ستُنشر العروض الموسمية هنا عند توفرها."></span></footer>
+<a id="wa" href="https://wa.me/96899341643" target="_blank" rel="noopener">WhatsApp</a>
+<div id="cartbar"><button class="btn f" id="copen"></button></div>
+<div id="cart"><h3 data-t="Your Order|طلبك"></h3><div id="cl"></div><b id="ct"></b>
+<div class="note" data-t="Payment methods and delivery are not confirmed online; the restaurant will confirm with you on WhatsApp.|طرق الدفع والتوصيل غير مؤكدة عبر الموقع؛ ستؤكدها إدارة المطعم معك عبر واتساب."></div>
+<input id="on" data-p="Name|الاسم"><input id="op" type="tel" data-p="Phone|رقم الهاتف"><textarea id="oq" rows="2" data-p="Notes|ملاحظات"></textarea>
+<div class="row"><button class="btn f" id="osend" data-t="Send order via WhatsApp|أرسل الطلب عبر واتساب"></button><button class="btn" id="cclose" data-t="Close|إغلاق"></button></div></div>
+
+<script>
+const D=[
+["Soups","الشوربات",`Tamatar Dhaniya Shorba|1.1
+Shorba Adas (Dal Shorba)|1.1
+Murgh Badami Shorba|1.3
+Nadan Muringakai Marsam Yumsum|1.5
+Broccoli Almond Broth|1.5
+Sweet Corn Soup (Veg / Chicken)|1.1/1.3
+Manchow Soup (Veg / Chicken)|1.1/1.3
+Hot and Sour Soup (Veg / Chicken)|1.1/1.3
+Tom Yum Soup (Chicken / Prawns)|1.7
+Kahani Special Seafood Soup|1.7`],
+["Salads & Accompaniments","السلطات والمقبلات الجانبية",`Mango Avocado Chaat With Gilafi Shrimp|2.4
+Rocca Beetroot Salad With Fetta Cheese & Candied Walnuts|1.8
+Chicken Tikka Caesar Salad|1.9
+Garden Fresh Salad|1.2
+Fattoush|1.3
+Tabbouleh|1.3
+Cone Masala Papad|0.7
+Boondi Raita|0.8
+Pineapple Raita|0.9`],
+["Vegetarian Appetizers","المقبلات النباتية",`Paneer Shashlik|2.3
+Gilafi Subz Seekh|2.1
+Paneer Cheese Kebab|2.3
+Paneer 65|2.1
+Paneer Chilly|2.3
+Mushroom Black Pepper|2.2
+Veg Crispy|1.9
+Vegetable Spring Roll|2
+Honey Chilly Potato|1.9
+Veg Manchurian|1.9
+Mix Veg Platter|3.9`],
+["Non-Vegetarian Appetizers","المقبلات غير النباتية",`Pahadi Murgh Tikka|2.7
+Zafrani Murgh Tikka|2.9
+Malai Murgh Tikka|2.9
+Punjabi Murgh Tikka|2.7
+Kahani Tandoori Chicken|1.9/3.5
+Murgh Gilafi Seekh|2.7
+Murgh Shikanja Kebab|2.7
+Mutton Seekh Kebab|3.2
+Hammour Fish Tikka|2.9
+Pahadi Fish Tikka|2.9
+Patthar Ka Gosht|3.2
+Non-Veg Platter (Medium / Large)|3.8/5.9
+Tandoori Prawns|3.9`],
+["Additional Starters","مقبلات إضافية",`South Indian Chicken 65|2.7
+King Fish Tawa Fry / Rawa Fry|2.9
+Kanthari Fish Fry|2.9
+Prawns Tawa Fry / Rawa Fry|3.6
+Kunafa Chicken|2.7
+Chicken Spring Roll|2.2
+Kunafa Shrimps|3.5
+Drums Of Heaven (Chicken Lollipop)|2.5
+Jilings Chilli Chicken|2.5
+Crispy Chicken|2.5
+Tempura Fried Prawns|3.5
+Crispy Fish Pepper Garlic|2.9
+Fish Chilly Dry|2.9
+Squid Salt & Pepper|3.2`],
+["Dim Sum","الديم سم",`Chicken Dumpling|2.5
+Veg Dumpling|2.1`],
+["Vegetarian Main Course","الأطباق الرئيسية النباتية",`Khumbh Mutter|2.2
+Paneer Saagwaala|2.3
+Paneer Tikka Masala|2.6
+Shahi Paneer|2.4
+Kadhai Paneer|2.3
+Kadhai Vegetables|1.9
+Lasooni Methi|1.9
+Aloo Gobhi Kashmiri|1.9
+Bhendi Do Pyaaza|1.9
+Kahaani Dal Makhani|1.9
+Dal Dhaabeewaali|1.9
+Dal Tadka|1.7
+Mixed Veg Qorma|1.9
+Mixed Veg Stew|1.9`],
+["Non-Vegetarian Main Course","الأطباق الرئيسية",`Bhuna Gosht|3.2
+Mutton Roganjosh|3.1
+Mutton Rarra Gosht|3.2
+Kahani Special Smoked Butter Chicken|2.8
+Chicken Tikka Masala|2.8
+Indian House Special Chicken Nagina|2.9
+Murgh Musallam|3.2
+Kolhapuri Chicken|2.5
+Dhaaba Kadhai Chicken|2.5
+Chicken Stew|2.5
+Chicken Ghee Roast|2.9
+Mutton Pepper Fry|3.2
+Malabar Mutton Curry|3.2
+Prawn Mango Curry|3.5
+Alleppey Fish Curry (King Fish)|3.1
+Fish Moilee (King Fish)|3.1
+Prawns Ghee Roast|3.5
+Koondal Roast / Ghee Roast|3.1`],
+["Chinese & Thai Specialities","الأطباق الصينية والتايلاندية",`Mix Veg Ball Hot Garlic|1.9
+Mix Veg Ball Manchurian|1.9
+Mix Veg Thai Curry Green|1.9
+Mix Veg Thai Curry Red|1.9
+Chicken Chilly|2.5
+Chicken Kung Pao|2.5
+Chicken Hot Garlic|2.5
+Chicken Black Pepper|2.5
+Chicken Manchurian|2.5
+Fish in Hot Garlic Sauce|2.9
+Thai Curry Chicken Red / Green|2.5
+Thai Curry Prawns Red / Green|2.9`],
+["Rice & Biryani","الأرز والبرياني",`Dum Chicken Biryani|1.9
+Chicken Tikka Biryani|2.5
+Kahani Special Pardewali Mutton Biryani|3.5
+Kahani Special Pardewali Chicken Biryani|2.9
+Fish Biryani|2.9
+Prawns Biryani|3.5
+Veg Biryani|1.6
+Ghee Jeera Rice|1.4
+Steamed Rice|0.9
+Veg Fried Rice|1.6`],
+["Noodles & Fried Rice","النودلز والأرز المقلي",`Chilli Garlic Noodles|1.6
+Schezwan Noodles|1.6
+Hakka Noodles|1.6
+Fried Rice|1.6
+Burnt Garlic Fried Rice|1.6
+Schezwan Fried Rice Mix|2.6
+Schezwan Fried Rice Prawn|2.5
+Schezwan Fried Rice Chicken|2.1
+Schezwan Fried Rice Veg|1.8
+Mix Fried Rice|2.6
+Kahani Triple Schezwan Chicken|2.9
+Kahani Triple Schezwan Veg|2.4
+Jasmine Rice|1.2`],
+["Indian Breads","الخبز الهندي",`Appam|0.2
+Tandoori Roti|0.2
+Malabari Paratha|0.2
+Roomali Roti|0.3
+Tandoori Naan|0.3
+Pudina Naan|0.4
+Cheese Naan / Paratha|0.9
+Chur Chur Naan|0.5
+Kulcha / Paratha|0.3
+Cheese Garlic Naan|0.9
+Assorted Bread Basket|1.9`],
+["Signature Desserts","الحلويات",`Gulab Jamun Creme Brulee|2.5
+Gajar Halwa Basque Cheesecake|2.7
+Kahani Special Rabdi Falooda|2.2
+Honey Noodles With Vanilla Ice Cream|1.9
+Choice Of Ice Cream|1.9`],
+["Beverages","المشروبات",`Seasonal Fresh Juices|1.2
+Baraka Farm Mango Juice|1.2
+Avocado Juice|1.4
+Sicilian Lemon Lassi|1.3
+Mango Lassi|1.3
+Regular Lassi|1.1
+Fresh Lime Soda|1.3
+Kahani Lemon Mint Cooler|1.3`],
+["Hot Beverages","المشروبات الساخنة",`Karak Chai|0.4
+Chai Sulaimani|0.2
+Nescafe|0.5`]];
+const SP=["Kahani Special Smoked Butter Chicken","Kahani Special Pardewali Mutton Biryani","Kahani Special Rabdi Falooda","Kahani Tandoori Chicken","Chicken Ghee Roast","Prawns Ghee Roast","Alleppey Fish Curry (King Fish)","Kahaani Dal Makhani","Chicken Tikka Masala"];
+const $=id=>document.getElementById(id),WA="96899341643";
+let lang="ar",cat=-1,cart={};
+try{lang=localStorage.getItem("kl")||"ar"}catch(e){}
+const items=D.map(c=>c[2].split("\n").map(l=>{const[n,p]=l.split("|");return{n,p:p.split("/").map(Number)}}));
+const f=n=>n.toFixed(3),t=s=>s.split("|")[lang=="ar"?1:0];
+function render(){
+ document.documentElement.lang=lang;document.documentElement.dir=lang=="ar"?"rtl":"ltr";$("lang").textContent=lang=="ar"?"EN":"عربي";
+ document.querySelectorAll("[data-t]").forEach(e=>e.textContent=t(e.dataset.t));
+ document.querySelectorAll("[data-p]").forEach(e=>e.placeholder=t(e.dataset.p));
+ const L=i=>lang=="ar"?D[i][1]:D[i][0];
+ $("chips").innerHTML=`<button class="btn ${cat<0?"on":""}" data-c="-1">${t("All|الكل")}</button>`+D.map((c,i)=>`<button class="btn ${cat==i?"on":""}" data-c="${i}">${L(i)}</button>`).join("");
+ const q=$("q").value.toLowerCase();let h="";
+ D.forEach((c,i)=>{if(cat>=0&&cat!=i)return;const r=items[i].filter(x=>x.n.toLowerCase().includes(q));if(!r.length)return;
+  h+=`<h3 style="margin:22px 0 4px;color:var(--gold)">${L(i)}</h3>`+r.map(x=>`<div class="it"><span>${x.n}</span><div class="pr">${x.p.map((p,k)=>`<button data-a="${i}|${x.n}|${p}">${f(p)} OMR +</button>`).join("")}</div></div>`).join("")});
+ $("list").innerHTML=h||`<p>${t("No results|لا توجد نتائج")}</p>`;
+ $("specs").innerHTML=SP.map(n=>{const x=items.flat().find(y=>y.n==n);return`<div class="card"><div class="ph">${n.replace(/ \(.*/,"")}</div><div class="it" style="border:0"><span>${f(x.p[0])} OMR</span><div class="pr"><button data-a="0|${x.n}|${x.p[0]}">+</button></div></div></div>`}).join("");
+ cartUI()}
+function cartUI(){const k=Object.keys(cart);let tot=0,n=0;
+ $("cl").innerHTML=k.map(key=>{const c=cart[key];tot+=c.p*c.q;n+=c.q;return`<div class="it"><span>${c.n} — ${f(c.p)}</span><div class="pr"><button data-m="${key}">−</button><b>${c.q}</b><button data-pl="${key}">+</button></div></div>`}).join("")||`<p>${t("Cart is empty|السلة فارغة")}</p>`;
+ $("ct").textContent=t("Total|المجموع")+": "+f(tot)+" OMR";$("copen").textContent=`🛒 ${n} · ${f(tot)}`;$("cartbar").style.display=n?"block":"none"}
+document.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;const d=b.dataset;
+ if(d.c!==undefined){cat=+d.c;render()}
+ if(d.a){const[,n,p]=d.a.split("|"),key=n+"|"+p;cart[key]=cart[key]||{n,p:+p,q:0};cart[key].q++;cartUI()}
+ if(d.pl){cart[d.pl].q++;cartUI()}
+ if(d.m){if(--cart[d.m].q<1)delete cart[d.m];cartUI()}});
+$("q").oninput=render;$("lang").onclick=()=>{lang=lang=="ar"?"en":"ar";try{localStorage.setItem("kl",lang)}catch(e){}render()};
+$("copen").onclick=()=>$("cart").style.display="block";$("cclose").onclick=()=>$("cart").style.display="none";
+const go=m=>window.open(`https://wa.me/${WA}?text=${encodeURIComponent(m)}`,"_blank","noopener");
+$("osend").onclick=()=>{const k=Object.values(cart);if(!k.length)return;let tot=0;
+ go("New order / طلب جديد\n"+k.map(c=>{tot+=c.p*c.q;return`• ${c.n} x${c.q} = ${f(c.p*c.q)} OMR`}).join("\n")+`\nTotal: ${f(tot)} OMR\nName: ${$("on").value}\nPhone: ${$("op").value}\nNotes: ${$("oq").value}\n(Prices pending confirmation)`)};
+$("rsend").onclick=()=>{if(!$("rn").value||!$("rp").value||!$("rd").value)return alert(t("Please fill name, phone and date|يرجى تعبئة الاسم والهاتف والتاريخ"));
+ go(`Reservation REQUEST (not confirmed) / طلب حجز أولي\nName: ${$("rn").value}\nPhone: ${$("rp").value}\nDate: ${$("rd").value} ${$("rt").value}\nGuests: ${$("rg").value}\nSeating: ${$("rs").value}\nNotes: ${$("rm").value}`)};
+$("csend").onclick=()=>{if($("cm").value)go(`Message from ${$("cn").value}:\n${$("cm").value}`)};
+render();
+</script></body></html>
+
